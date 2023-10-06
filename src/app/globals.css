@@ -41,10 +41,12 @@ a:focus {
   color: #e11d48;
 }
 
-header {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+@media (min-width: 40rem) {
+  header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
 }
 
 header img {
