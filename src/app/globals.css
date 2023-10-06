@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@300..800,0..1&display=swap');
 
 :root {
-  --page-bg: #f1f5f9;
+  --page-bg: #f3f4f6;
   --surface-bg: #fff;
-  --accent: #e11d48;
+  --accent: #f43f5e;
+  --text: #374151;
+  --heading: #111827;
 }
 
 * {
@@ -19,14 +21,24 @@ body {
   overflow-x: hidden;
   font-family: 'Recursive', monospace;
   line-height: 1.5;
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 a {
   color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #e11d48;
 }
 
 header {
@@ -68,6 +80,11 @@ section {
   text-transform: uppercase;
   border-radius: 10px;
   font-weight: bold;
+}
+
+.buttons a:hover,
+.buttons a:focus {
+  background: #e11d48;
 }
 
 /* @media (prefers-color-scheme: dark) {
