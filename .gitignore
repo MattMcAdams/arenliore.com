@@ -1,35 +1,24 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# System Junk
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+*.log
+.cache
 .DS_Store
-*.pem
+src/.temp
+.env
+.env.*
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Project junk
 
-# local env files
-.env*.local
+node_modules
+dist
+static/temp
 
-# vercel
-.vercel
+# Large media
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+src/_static/cdn/
+!src/_static/cdn/.gitkeep
+src/_static/images/
+!src/_static/images/.gitkeep
+
+# Local Netlify folder
+.netlify

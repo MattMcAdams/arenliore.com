@@ -1,0 +1,98 @@
+---
+layout: base.njk
+title: About
+---
+
+<main>
+  <article class="card">
+    <header>
+      {# <Image src="/images/IMG_1364.jpeg" alt="" width="200" height="200" /> #}
+      <Image src="/images/icon_2.jpeg" alt="" width="200" height="200" />
+      <div>
+        <h1>Aren Liore</h1>
+        <p>26 &middot; He/Him &middot; Pan</p>
+        {% if metadata.con %}
+          <p><span class="fa-solid fa-location-dot"></span> {{metadata.con}}</p>
+        {% endif %}
+        {% if metadata.upcoming %}
+          <p>
+            <span class="fa-sharp fa-solid fa-arrow-right"></span> {{metadata.upcoming}}
+          </p>
+        {% endif %}
+      </div>
+    </header>
+    <section>
+      <p>{{metadata.description}}</p>
+    </section>
+    <section>
+      <h2>Find me on social</h2>
+      <ul class="buttons">
+        <li>
+          <a href="https://twitter.com/arenliore">
+            <span>Twitter</span>
+            <span class="fa-brands fa-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://bsky.app/profile/arenliore.com">
+            <span>BlueSky</span>
+            <span class="fa-solid fa-cloud"></span>
+          </a>
+        </li>
+        {% if metadata.con %}
+          <li>
+            <a href="https://barq.social/p/Ptu0zTF">
+              <span>Barq</span>
+              <span class="fa-solid fa-globe"></span>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+      {% if metadata.con %}
+        <p class="subtle">I also have a <a href="https://twitter.com/ArenAfterDark">nsfw twitter</a> if you're into that kind of thing.</p>
+      {% endif %}
+    </section>
+    {% if metadata.con %}
+      <section>
+        <h2>Chat with me</h2>
+        <ul class="buttons">
+          <li>
+            <a href="https://t.me/ArenLiore">
+              <span>Telegram</span>
+              <span class="fa-brands fa-telegram"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://discordapp.com/users/Aren#8081">
+              <span>Discord</span>
+              <span class="fa-brands fa-discord"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    {% endif %}
+    <section>
+      <h2>Let's game together</h2>
+      <ul class="buttons">
+        <li>
+          <a href="https://steamcommunity.com/id/ArenLiore">
+            <span>Steam</span>
+            <span class="fa-brands fa-square-steam"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://account.xbox.com/en-us/profile?gamertag=Aren%20Liore">
+            <span>Xbox</span>
+            <span class="fa-brands fa-xbox"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/switch">
+            <span>Switch</span>
+            <span class="fa-solid fa-gamepad-modern"></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </article>
+</main>

@@ -1,24 +1,26 @@
 {
   "name": "arenliore.com",
   "version": "0.1.0",
+  "description": "Official website repository for www.furrytakeover.com",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "license": "none",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattMcAdams/arenliore.com.git"
   },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+  "bugs": {
+    "url": "https://github.com/MattMcAdams/arenliore.com/issues"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "@11ty/eleventy": "^1.0.0",
+    "luxon": "^2.5.2"
   }
 }
