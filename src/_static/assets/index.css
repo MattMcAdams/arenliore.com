@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   position: relative;
   font-size: 1.25rem;
+  min-height: 100vh;
 }
 
 body::before {
