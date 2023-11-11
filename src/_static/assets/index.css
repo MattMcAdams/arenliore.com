@@ -37,6 +37,7 @@ body {
   font-family: 'Recursive', sans-serif;
   line-height: 1.5;
   color: var(--text);
+  background: var(--page-bg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,22 +50,22 @@ body {
   min-height: 100vh;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
   mix-blend-mode: multiply;
   background: url('/images/interlaced.png');
-}
+} */
 
-body::after {
+/* body::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -2;
   background: var(--page-bg);
-}
+} */
 
 a {
   color: inherit;
