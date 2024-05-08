@@ -1,28 +1,28 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Recursive:wght,MONO@300..800,0..1&display=swap'); */
 
 :root {
-  --page-bg: #ffe6fe;
+  --page-bg: #E9CDB8;
   --surface-bg: #fff;
-  --accent: #6e73e6;
-  --accent-hover: #5b5fe0;
+  --accent: #803C3B;
+  --accent-hover: #491F20;
   --text: #374151;
   --text-subtle: #8ea0bb;
   --heading: #111827;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 
   :root {
-    --page-bg: #382943;
-    --surface-bg: #22172b;
+    --page-bg: #491F20;
+    --surface-bg: #803C3B;
     --text: #cddffb;
     --text-subtle: #575d7d;
     --heading: #fff;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
